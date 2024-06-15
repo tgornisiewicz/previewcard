@@ -1,0 +1,149 @@
+@use 'variables' as *;
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+.lexend-deca {
+	font-family: 'Lexend Deca', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+.big-shoulders-display {
+	font-family: 'Big Shoulders Display', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	border-radius: 10px;
+	overflow: hidden;
+
+	&__sedans,
+	&__suvs,
+	&__luxury {
+		width: 100%;
+		padding: 40px;
+		display: flex;
+		flex-direction: column;
+	}
+	&__sedans {
+		background-color: $bg1;
+	}
+	&__suvs {
+		background-color: $bg2;
+	}
+	&__luxury {
+		background-color: $bg3;
+	}
+	&__img {
+		width: 50px;
+	}
+	&__header {
+		margin-top: 30px;
+		color: $c2;
+		font-size: 30px;
+	}
+	&__description {
+		margin-top: 30px;
+		color: $c1;
+		letter-spacing: 0.5px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	&__button--sedans,
+	&__button--suvs,
+	&__button--luxury {
+		margin-top: 30px;
+		padding: 12px;
+		font-size: 14px;
+		letter-spacing: 1px;
+		background-color: $c2;
+		border-radius: 20px;
+		width: 150px;
+		text-decoration: none;
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+	&__button--sedans {
+		color: $bg1;
+		&:hover {
+			border: 1px solid $c2;
+			color: $c2;
+			background-color: transparent;
+		}
+	}
+	&__button--suvs {
+		color: $bg2;
+		&:hover {
+			border: 1px solid $c2;
+			color: $c2;
+			background-color: transparent;
+		}
+	}
+	&__button--luxury {
+		color: $bg3;
+		&:hover {
+			border: 1px solid $c2;
+			color: $c2;
+			background-color: transparent;
+		}
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.content {
+		margin-top: 300px;
+		width: 1000px;
+		height: 560px;
+		flex-direction: row;
+
+		&__sedans,
+		&__suvs,
+		&__luxury {
+			width: calc(100% / 3);
+			padding: 50px;
+		}
+		&__img {
+			width: 70px;
+		}
+		&__header {
+			margin-top: 40px;
+			font-size: 40px;
+		}
+		&__description {
+			margin-top: 40px;
+			font-size: 16px;
+			word-spacing: 3px;
+			line-height: 25px;
+		}
+		&__button--sedans,
+		&__button--suvs,
+		&__button--luxury {
+			margin-top: 110px;
+			padding: 15px;
+			font-size: 15px;
+			letter-spacing: 2px;
+			background-color: $c2;
+			width: 170px;
+			border-radius: 30px;
+		}
+	}
+}

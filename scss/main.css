@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+.lexend-deca {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.big-shoulders-display {
+  font-family: "Big Shoulders Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.content__sedans, .content__suvs, .content__luxury {
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.content__sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+.content__suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.content__luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+.content__img {
+  width: 50px;
+}
+.content__header {
+  margin-top: 30px;
+  color: hsl(0, 0%, 95%);
+  font-size: 30px;
+}
+.content__description {
+  margin-top: 30px;
+  color: hsla(0, 0%, 100%, 0.75);
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.content__button--sedans, .content__button--suvs, .content__button--luxury {
+  margin-top: 30px;
+  padding: 12px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 20px;
+  width: 150px;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.content__button--sedans {
+  color: hsl(31, 77%, 52%);
+}
+.content__button--sedans:hover {
+  border: 1px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  background-color: transparent;
+}
+.content__button--suvs {
+  color: hsl(184, 100%, 22%);
+}
+.content__button--suvs:hover {
+  border: 1px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  background-color: transparent;
+}
+.content__button--luxury {
+  color: hsl(179, 100%, 13%);
+}
+.content__button--luxury:hover {
+  border: 1px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  background-color: transparent;
+}
+
+@media screen and (min-width: 1200px) {
+  .content {
+    margin-top: 300px;
+    width: 1000px;
+    height: 560px;
+    flex-direction: row;
+  }
+  .content__sedans, .content__suvs, .content__luxury {
+    width: 33.3333333333%;
+    padding: 50px;
+  }
+  .content__img {
+    width: 70px;
+  }
+  .content__header {
+    margin-top: 40px;
+    font-size: 40px;
+  }
+  .content__description {
+    margin-top: 40px;
+    font-size: 16px;
+    word-spacing: 3px;
+    line-height: 25px;
+  }
+  .content__button--sedans, .content__button--suvs, .content__button--luxury {
+    margin-top: 110px;
+    padding: 15px;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background-color: hsl(0, 0%, 95%);
+    width: 170px;
+    border-radius: 30px;
+  }
+}/*# sourceMappingURL=main.css.map */
